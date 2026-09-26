@@ -1,0 +1,16 @@
+{% extends 'base_static4.html' %}
+
+{% block title %} Task Master{% endblock %}
+
+{% block content %}
+<div class="content">
+        <h1>Update Task Master</h1>
+        
+
+        <form action="/update/{{task.id}}" method="post">
+            <input type="text" name="content" id="content"  value="{{task.content}}">
+            <input type="submit" value="Update Task">
+        </form>
+</div>
+
+{% endblock %}

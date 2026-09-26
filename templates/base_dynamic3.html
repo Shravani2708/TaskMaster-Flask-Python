@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Document{% endblock %}</title>
+</head>
+<body>
+    {% block content %}{% endblock %}
+</body>
+</html>
+
+<!--
+#The {% ... %} parts are Jinja template syntax, which Flask uses to dynamically build HTML.
+#This file serves as a base template that other templates can extend.
+#Other templates can use this base template by using the {% extends "base.html" %} syntax.
+#The {% block ... %}{% endblock %} parts define sections that child templates can override.
+#This base template includes a title block and a content block that can be customized by child templates.
+
+-->
