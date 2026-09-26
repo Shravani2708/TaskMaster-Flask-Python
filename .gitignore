@@ -1,0 +1,10 @@
+# Virtual environment directories
+#nano .gitignore
+#Enter the files and directories you want to ignore in this file and enter  ctrl+0 and enter
+#cat .gitignore
+env/
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+instance/
